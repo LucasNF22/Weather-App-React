@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import wallpaper from '../src/assets/images/sunny-wp.png';
+import '../src/assets/css/styles.css';
+
+import Header from './components/Header';
+import Main from './components/Main';
+import Details from './components/Details';
+import HoursSlide from './components/HoursSlide';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="main-body">
+        <div className="wallpaper">
+          <img src={wallpaper} alt="backgorund"></img>
+        </div>
+        
+        <Header />
+        <Main />
+        <Details />
+        <div className="extendedDiv" >
+          <div>
+            Hoy
+          </div>
+          <div>
+            7 días <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <HoursSlide />
+      
+      </div>
+    </>
   );
 }
 
