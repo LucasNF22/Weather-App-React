@@ -22,7 +22,10 @@ function Main() {
             <img src={icon} alt="icono"/>           
             <div className="temp" >
                 <div className="temp-num" >
-                  24
+                  20
+                </div>
+                <div className="grados">
+                    °C
                 </div>
                 <div className="temp-desc" >
                     Soleado

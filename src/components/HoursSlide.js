@@ -19,7 +19,7 @@ function HoursSlide() {
                         12:00
                     </div>
                     <div>
-                        <img src={img1} />
+                        <img src={img1} alt="img"/>
                     </div>
                     <div>
                         20°
@@ -30,7 +30,7 @@ function HoursSlide() {
                         Ahora
                     </div>
                     <div>
-                        <img src={img1} />
+                        <img src={img1} alt="img"/>
                     </div>
                     <div>
                         20°
@@ -41,7 +41,7 @@ function HoursSlide() {
                         14:00
                     </div>
                     <div>
-                        <img src={img2} />
+                        <img src={img2} alt="img"/>
                     </div>
                     <div>
                         18°
@@ -52,7 +52,7 @@ function HoursSlide() {
                         15:00
                     </div>
                     <div>
-                        <img src={img3} />
+                        <img src={img3} alt="img"/>
                     </div>
                     <div>
                         17°
@@ -63,7 +63,7 @@ function HoursSlide() {
                         16:00
                     </div>
                     <div>
-                        <img src={img3} />
+                        <img src={img3} alt="img"/>
                     </div>
                     <div>
                         17°
@@ -74,7 +74,29 @@ function HoursSlide() {
                         17:00
                     </div>
                     <div>
-                        <img src={img4} />
+                        <img src={img4} alt="img"/>
+                    </div>
+                    <div>
+                        15°
+                    </div>
+                </div>
+                <div className="card-day">
+                    <div>
+                        18:00
+                    </div>
+                    <div>
+                        <img src={img4} alt="img"/>
+                    </div>
+                    <div>
+                        15°
+                    </div>
+                </div>
+                <div className="card-day">
+                    <div>
+                        19:00
+                    </div>
+                    <div>
+                        <img src={img4} alt="img"/>
                     </div>
                     <div>
                         15°

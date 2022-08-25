@@ -2,34 +2,48 @@
     box-sizing: border-box;
 }
 
-.wallpaper img {
-    width: 100vw;
+.link{
+    text-decoration: none;
+    color: #303345;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+#background{
+    width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     z-index: -1;
+    
 
 }
 
 .main-body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
-    justify-content: flex-start;
+    padding: 25px 0px;
+    justify-content: space-between;
     gap: 15px;
     background-color: rgba(255, 255, 255, .15);
-
-
+   
 }
 
 .header {
     display: flex;
     width: 85%;
+    align-items: center;
     justify-content: space-between;
     font-size: 30px;
     color: #303345;
@@ -85,11 +99,19 @@
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     color: #303345;
+    position:relative
 }
 
 .temp-num{
     font-size: 80px;
     line-height: 70px;
+    
+}
+
+.grados{
+    position: absolute;
+    top: -8px;
+    right: -10px;
 }
 
 .temp-desc{
@@ -111,15 +133,15 @@
 
 .card {
     width: 85vw;
-    height: 58px;
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px 10px 15px;
     font-family: 'Nunito', sans-serif;
+    color: #303345;
     font-weight: ligth;
     background-color: rgba(255, 255, 255, .4);
-    backdrop-filter: blur(1px);
     border-radius: 15px;
     border: 0.5px solid #eee;
 
@@ -129,7 +151,7 @@
     background-color: rgba(255, 255, 255, .8);
 }
 
-.card img{
+.card-img{
     width: 45px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -142,11 +164,13 @@
     display: flex;
     width: 90%;
     justify-content: space-between;
-    
-    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
     font-weight: 400;
     padding: 10px 10px;
     color: #303345;
+    border-bottom: solid 1.5px #303345;
+    
 }
 
 .card-day {
@@ -163,7 +187,6 @@
     font-family: 'Nunito', sans-serif;
     padding: 14px 12px 14px 12px;
     background-color: rgba(255, 255, 255, .45);
-    backdrop-filter: blur(5px);
     border-radius: 25px;
     border: 0.5px solid #eee;
     scroll-snap-align: start;
@@ -175,11 +198,266 @@
 }
 
 .slide {
-    width: 90%;
+    width: 100%;
     display: flex;
     scroll-snap-type: x mandatory;
     scroll-padding: 25px;
     column-gap: 12px;
     overflow-x: scroll;
+    overflow-y: visible;
+    padding-bottom: 15px;
+    
+}
+
+/*------------------Extended Page ---------------------*/
+
+#extendedPage{
+    transform: translate(0%);
+}
+
+.headerTitle{
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.ExtMain{
+    
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    padding: 25px 20px ;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 15px;
+    border: 0.5px solid #eee;
+    box-shadow: 4px 4px 25px rgba(26, 30, 65, 0.1);
+    gap: 40px;
+    
+
+}
+
+.ExtMain-top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ExtMain-top-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 15px 0px 0px 0px ;
+
+}
+
+.ExtMain-top-left-top{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8C8C9A;
+    
+}
+.ExtMain-top-left-bottom{
+    display: flex;
+    font-size: 15px;
+    font-weight:550;
+    color: #303345;
+    
+}
+
+
+.ExtMain-top-right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;      
+    
+}
+
+.ExtMain-top-right-left{
+    font-size: 20px;
+    font-weight:bold;
+    color: #303345;
+    padding: 0px 5px 5px 0px;
+}
+
+.ExtMain-top-right-right {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ExtMain-top-right-right img{
+    width:95%;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(4px 4px 6px #d8d8d8);
+    
+}
+
+.ExtMain-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.ExtMain-bottom-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.ExtMain-bottom-item img {
+    width: 95%;
+    filter: drop-shadow(0px 0px 6px #d8d8d8c9);
+}
+
+
+.ExtMain-bottom-item-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 0px 20px rgba(26, 30, 65, 0.10);
+    
+}
+.ExtMain-bottom-item-bottom{
+    display: flex;
+    font-size: 15px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    color: #303345;
+}
+
+.extCard-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extCard-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extCard-right-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.extCard-right-right img{
+    width: 45px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-top{
+    padding-top: 20px;
+}
+
+
+
+/*----------------- Locations -------------*/       
+
+.container-locations{
+    
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+    transition:all .02s ease;
+    visibility: hidden;
+}
+
+.locations{
+    position: fixed;
+    display: flex;
+    gap: 15px 0px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px 25px 25px;
+    z-index: 3;
+    background: linear-gradient(rgba(242, 242, 242, .6), rgba(214, 214, 214, .6)) ;
+    border-right: 1.5px solid #eee;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    border-radius: 0px 30px 30px 0px;
+    font-family: 'Nunito', sans-serif;
+    transition: all .3s ease;
+    color: #303345;
+    transform: translate(-100%);
+}
+
+.locations-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.show{
+    transform: translate(0%);
+    
+}
+
+.view{
+    visibility: visible;
+}
+
+
+.imputForm{
+    background-color: white;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: #303345;
+    font-family: 'Nunito', sans-serif;
+}
+
+.locations-subtitle{
+    font-size: 25px;
+    font-weight: bold;
+    align-self: flex-start;
+    padding-top: 30px;
+}
+
+.card-city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .65);
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    color: #303345;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, .5);
 
 }
